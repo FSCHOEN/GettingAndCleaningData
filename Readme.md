@@ -32,25 +32,25 @@ The raw data archive needs to be downloaded and extracted into 'UCI HAR Dataset'
 
 ##   Code description
 The script run_analysis.R will do the following steps:
-1. Merge the training set and the test set to create a single data set.
-	* check if directory "UCI HAR Dataset" exists
-	* convert files (for subjects, measurement sets and labels) into r-table objects
-	* merge the tables
-2. Extract the measurement on the mean and the standard deviation for each measurement.
-	* find measurement types with "`std()`" or "`mean()`" in its name 
-    * replace the default column names in measurement set
-	* extract only relevant measurements
-3. Use descriptive activity names to name the activities in the data set.
-    * transform numeric activity labels into correct written names
-4. Appropriately label the data set with descriptive variable names.
-    * apply capitalization for names easier to read
-    * fix typos
-	* add proper names for subject and activity column
-	* merge data of subjects, measurement sets and labels into one table
-5. Create a second, independent tidy data set with the average of each variable for each activity and for each subject.
-     * subset data by subject and activity
-     * aggregate data by calculating the mean of all measurement types
-     * write the returned table to hard disk
+### 1. Merge the training set and the test set to create a single data set.
+ * check if directory "UCI HAR Dataset" exists
+ * convert files (for subjects, measurement sets and labels) into r-table objects
+ * merge the tables
+### 2. Extract the measurement on the mean and the standard deviation for each measurement.
+ * find measurement types with "`std()`" or "`mean()`" in its name 
+ * replace the default column names in measurement set
+ * extract only relevant measurements
+### 3. Use descriptive activity names to name the activities in the data set.
+ * transform numeric activity labels into correct written names
+### 4. Appropriately label the data set with descriptive variable names.
+ * apply capitalization for names easier to read
+ * fix typos
+ * add proper names for subject and activity column
+ * merge data of subjects, measurement sets and labels into one table
+### 5. Create a second, independent tidy data set with the average of each variable for each activity and for each subject.
+ * subset data by subject and activity
+ * aggregate data by calculating the mean of all measurement types
+ * write the returned table to hard disk
 	 
 ## Output
 `tidyData_average_activity_subject.txt` in R-working directory.
