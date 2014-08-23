@@ -53,7 +53,7 @@ The script run_analysis.R will do the following steps:
      * write the returned table to hard disk
 	 
 ## Output
-'tidyData_average_activity_subject.txt' in R-working directory.
+`tidyData_average_activity_subject.txt` in R-working directory.
 
 
 

@@ -18,28 +18,28 @@
 
 Measurement names contain 5-7 parts.
  * first part: prefix
- ** `t`: linear acceleration and angular velocity in time context
- ** `f`: Fast Fourier Transform (FFT) was applied
+  * `t`: linear acceleration and angular velocity in time context
+  * `f`: Fast Fourier Transform (FFT) was applied
  
  * second part: force distinction
- ** `Body`
- ** `Gravity`
+  * `Body`
+  * `Gravity`
  
  * third part: measurement type
- ** `Acc`: acceleration [g]
- ** `Gyro`: angular velocity [rad/seconds]
+  * `Acc`: acceleration [g]
+  * `Gyro`: angular velocity [rad/seconds]
  
  * fourth part: jerk signal (optional)
- ** `Jerk`: jerk signal
+  * `Jerk`: jerk signal
  
  * fifth part: magnitude (optional)
- ** `Mag`: magnitude (euclidean norm)
+  * `Mag`: magnitude (euclidean norm)
   
  * sixth part: estimated variable from signal
- ** mean(): mean value
- ** std(): standard deviation
+  * mean(): mean value
+  * std(): standard deviation
  
-  * seventh part: direction
- ** X
- ** Y 
- ** Z
+ * seventh part: direction
+  * `X`
+  * `Y` 
+  * `Z`
